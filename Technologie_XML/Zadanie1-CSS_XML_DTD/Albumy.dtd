@@ -1,0 +1,42 @@
+<!ELEMENT albumCollection (info,types,albums)>
+
+<!ELEMENT info (author+,topic)>
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST author
+  index CDATA #IMPLIED>
+<!ELEMENT topic (#PCDATA)>
+
+<!ELEMENT types (type)+>
+<!ELEMENT type (name,countryOfOrigin,time)>
+<!ATTLIST type
+  id ID #REQUIRED>
+  <!ELEMENT name (#PCDATA)>
+<!ELEMENT countryOfOrigin (#PCDATA)>
+<!ATTLIST countryOfOrigin
+  continent (Europe|Asia|North_America|South_America|Africa|Austalia_and_Oceania|Europe_North_America) #REQUIRED>
+<!ELEMENT time (#PCDATA)>
+<!ATTLIST time
+  age CDATA #IMPLIED>
+
+<!ELEMENT albums (album)+>
+<!ELEMENT album (author,title,topSong,releaseDate,
+                 price,tracks)>
+<!ATTLIST album
+  id ID #REQUIRED
+  typeId IDREF #REQUIRED>
+<!ELEMENT topSong (title,lenght,producer,trackNumber)>
+<!ELEMENT releaseDate (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+  currency NMTOKEN #REQUIRED>
+<!ELEMENT lenght (#PCDATA)>
+<!ELEMENT producer (#PCDATA)>
+<!ELEMENT trackNumber (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT tracks (heading, song+)>
+<!ELEMENT heading (#PCDATA)>
+<!ELEMENT song (number, trackTitle, trackLenght)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT trackTitle (#PCDATA)>
+<!ELEMENT trackLenght (#PCDATA)>

@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1470924240004724}
+  m_IsPrefabAsset: 1
+--- !u!1 &1470924240004724
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4501038012052932}
+  - component: {fileID: 114366231608294360}
+  m_Layer: 0
+  m_Name: MinesWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4501038012052932
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470924240004724}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114366231608294360
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1470924240004724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bce3212f6a9eb3d4ebceff44041d9f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Mines
+  Description: Bacteria knows how to blow up enemies who stalks him during his adventures
+    in the fabulous world of amebas and bacterias. I have no idea why am I writinh
+    this text, but I'mm sitting on a C4 and if I stop writing I gonna blow up which
+    is a bit confusing.
+  CurrentWeaponSprite: {fileID: 21300000, guid: 63ffb0d417ba6c6488e10d6c8d832b55,
+    type: 3}
+  Color: {r: 1, g: 1, b: 1, a: 0.29803923}
+  Animation: {fileID: 1247401675733446, guid: 0dfbf27b40e824e41b7d7de9d45036a6, type: 2}
+  IdleSprite: {fileID: 1636161274789524, guid: 9e7c8967f0638594bb3a09b014311303, type: 2}
+  cursor: {fileID: 2800000, guid: 1de23acfbc067e44e838f02e2fba2d51, type: 3}
+  EnergyCost: 20
+  bulletPrefab: {fileID: 0}

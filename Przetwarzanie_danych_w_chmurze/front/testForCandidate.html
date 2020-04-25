@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+    <link href="https://surveyjs.azureedge.net/1.1.20/survey.css" type="text/css" rel="stylesheet"/>
+
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+	<title>Test for you</title>
+</head>
+
+<body>
+
+	<header>
+		<nav class="navbar navbar-dark bg-dark navbar-expand-md" class="d-inline-block mx-1 align-bottom">
+
+			<a class="navbar-brand" href="#"><img src="img/Rowdyruff_Boys.jpg" width="30" height="30" alt=""> Rowdyruff
+				Boys</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="candidate.html">
+							Start
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Tests</a>
+
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="testForCandidate.html">Show my test</a>
+							<a class="dropdown-item" href="#">Show my result</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" id="signOutCandidate" href="#" style='color: orange'>
+							Log out
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" id="getSynonym" href="#" style='color: blue'>
+							Find synonym
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+		</nav>
+	</header>
+
+	<div id="testID">
+
+	</div>
+
+	<div class="container-fluid">
+		<div class="raw">
+			<div class="nav">
+
+			</div>
+		</div>
+
+		<div class="raw">
+			<div class="content">
+				<div>
+					<div id="surveyContainer">
+						<div id="survey"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div>
+			<p id="noTest"></p>
+		</div>
+
+		<div class="raw">
+			<div class="footer">
+
+			</div>
+		</div>
+	</div>
+
+	<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script> -->
+
+	<script src="https://unpkg.com/jquery"></script>
+	<script src="https://surveyjs.azureedge.net/1.1.25/survey.jquery.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="scripts.js"></script>
+
+	<script src="js/vendor/aws-cognito-sdk.min.js"></script>
+	<script src="js/vendor/amazon-cognito-identity.min.js"></script>
+	<script src="https://js.arcgis.com/4.3/"></script>
+
+	<script src="js/config-candidate.js"></script>
+	<script src="js/cognito-auth-candidate.js"></script>
+	<script src="js/candidate.js"></script>
+	<script>
+		var jsonTest = '';
+		var email = '';
+		cognitoUser.getUserAttributes(function (err, result) {
+			if (err) {
+				alert(err);
+				return;
+			}
+			for (i = 0; i < result.length; i++) {
+				//console.log('attribute ' + result[i].getName() + ' has value ' + result[i].getValue());
+				if (i == result.length - 2) {
+					//alert('Your account status: ' + result[i].getName() + ' has value ' + result[i].getValue());
+				}
+				if (i == result.length - 1) {
+					//alert('You are logged in on ' + result[i].getName() + ' which has value ' + result[i].getValue());
+					email = result[i].getValue();
+					sendPOSTToGetID(email);
+				}
+			}
+		});
+
+		function sendPOSTToGetID(email) {
+			let url = "https://54pvtn3r3g.execute-api.us-east-1.amazonaws.com/witamUser/gettestid";
+			console.log("Get test ID for " + email);
+			var text = '{ "userEmail":"' + email + '"}';
+			$.ajax({
+				headers: {
+					'Authorization': RowdyruffBoys.authToken,
+					'Accept': 'application/json',
+					'Content-Type': 'application/json'
+				},
+				'type': 'POST',
+				'url': url,
+				'data': text,
+				'dataType': 'json',
+				crossDomain: true,
+				success: function (resp) {
+					console.log('good --> successfuly get user test ID from DynamoDB');
+					console.log(resp);
+					if(resp != "empty") {
+						getTestForCandidate(resp);
+					} else {
+						let text_ = $('#noTest').get(0);
+						let newBR = $('<br>').get(0);
+						let newContent0 = document.createTextNode("No test for you.");
+						text_.append(newBR);
+						text_.append(newContent0);
+					}
+					
+				},
+				error: function (resp, err) {
+					console.log('Fail during geting user test ID from DynamoDB');
+					console.log(resp);
+					console.log(err);
+				}
+			});
+		}
+		
+
+		function getTestForCandidate(id) {
+
+			$.ajax({
+				type: "GET",
+				url: "https://0hqj2kdr41.execute-api.us-east-1.amazonaws.com/testTable/testtable",
+				data: {
+					'Content-Type': 'application/json',
+					'Authorization': RowdyruffBoys.authToken,
+					'test_id': id
+				},
+				crossDomain: true,
+				success: function (data) {
+					var survey = new Survey.Model(JSON.parse(data));
+
+					survey
+						.onComplete
+						.add(function (result) {
+							console.log(JSON.stringify(result.data, null, 3));
+							
+							jsonTest = JSON.stringify(result.data, null, 3);
+							jsonTest = JSON.stringify(jsonTest);
+							sendSolvedTest(id);
+						});
+
+					$("#surveyContainer").Survey({ model: survey });
+
+				},
+				error: function (resp, err) {
+					console.log('Fail during geting user test ID from DynamoDB');
+					console.log(resp);
+					console.log(err);
+				}
+			});
+			
+			
+		}
+		
+
+		function sendSolvedTest(id){			
+						url = "https://54pvtn3r3g.execute-api.us-east-1.amazonaws.com/witamUser/sendsolvedtest";
+						var text = '{ "userEmail":"' + email + '", "test_id":"' + id + '", "test_check":"empty", "solvedTest":'+jsonTest+'}';  
+						
+						$.ajax({
+							headers: { 
+								'Authorization': RowdyruffBoys.authToken,
+								'Accept': 'application/json',
+								'Content-Type': 'application/json' 					
+							},
+							'type': 'POST',
+							'url': url,
+							'data': text,
+							'dataType': 'json',
+							crossDomain: true,
+							success: function(resp) { 
+							console.log('good successfuly sendSolvedTest to DynamoDB');
+							alert("Success!");
+							},
+							error: function(resp, err) { 
+								console.log('fail sendSolvedTest to DynamoDB');  
+								console.log(resp); 
+								console.log(err);
+								alert("Try send this test again . . .");
+							}
+							});		
+			}
+		
+		$(function onDocReady() {
+			$('#getSynonym').click(function() {
+				var selObj = window.getSelection(); 
+				<!-- alert(selObj); -->
+				let text = selObj.toString();
+				let url = "https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=dict.1.1.20191230T110607Z.67ee80aaff673d64.91f4ec360d12511dd6be5aaa55ae8b24ef99214f&lang=en-en&text=";
+				url = url + text;
+				
+				$.ajax({url: url, success: function(result){
+					console.log(result);
+					var json = result;
+					if(json.def[0] == null || json.def[0].tr[0].syn == null){
+						alert("There is no synonym for: " + text);
+					} else {
+						let synonyms = "";
+						for (i = 0; i < json.def[0].tr[0].syn.length; i++) {
+							if(i != json.def[0].tr[0].syn.length - 1) {
+								synonyms += json.def[0].tr[0].syn[i].text + ", ";
+							} else {
+								synonyms += json.def[0].tr[0].syn[i].text + ".";
+							}
+							
+						} 
+						if(json.def[0].tr[0].syn.length > 1) {
+							alert("Synonyms for word " + text + " are: " + synonyms);
+						} else {
+							alert("Synonym for word " + text + " is: " + synonyms);
+						}
+					}
+				  }});
+				
+			});
+		});
+	</script>
+
+</body>
+</html>

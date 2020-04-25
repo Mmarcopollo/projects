@@ -1,0 +1,239 @@
+albumCollection {
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+	font-family: Courier New, monospac;
+	color: white;
+	display: block; 
+	padding-top: 25px; 
+	text-align: center; 
+	counter-reset: counter; 
+}
+
+/* First block */
+info {
+	display: block;
+	margin: 2em 10em 2em 10em;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	padding: 1em 1em;
+}
+
+info author {
+    display: block;
+}
+
+info author::after {
+    content: " " attr(index)
+}
+
+info topic {	
+	display: block;
+	padding-top: 0.5em;
+	font-size: 200%;
+}
+
+/* Types */
+types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+types type {
+	margin: 2em 2em 2em 2em;
+    background-color: rgba(63, 108, 206, 0.5);
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(30, 30, 30, 0.5);
+	text-align: center;
+	padding: 1em 1em;
+}
+
+type:hover { 
+    background-color: rgba(87, 74, 201, 1);
+}
+
+type *{
+    display: block;
+}
+
+type name{
+	font-size: 25px;  
+}
+
+type countryOfOrigin{
+    font-weight:bold;
+}
+
+type time::before {
+    display: inline;
+	font-weight: bold;
+    content: 'Date of creation: '; 
+}
+
+type time::after {
+    content: " " attr(age)
+}
+
+/* Albums */
+
+albums album {
+    display: block;
+    margin: 2em 30em 2em 30em;
+	font-size: 12px;
+    padding: 10px;
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(30, 30, 30, 0.5);
+    text-align: left;
+    background-color: rgb(54, 174, 211, 0.5);
+    position: relative;
+}
+
+album::after{
+    display:block;
+    font-size: 18px; 
+    text-align: right;
+	content: counter(counter) '. '; 
+	counter-increment: counter;
+}
+
+album *{
+    display:block;  
+}
+
+album *::before {
+    display:inline;
+    font-size: 14px; 
+    font-weight:bold;
+}
+
+album author::before {
+    content: 'Author: '; 
+}
+
+album title::before {
+    content: 'title: '; 
+}
+
+album topSong::before {
+    content: 'Top Song: '; 
+}
+
+album releaseDate::before {
+    content: 'Release Date: '; 
+}
+
+album price::before {
+    content: 'Price: ';
+}
+
+album price::after {
+    content: " " attr(currency)
+}
+
+/*Tracks in album*/
+album tracks{
+    display: block;
+    height: 2em;
+    text-align: center;
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(30, 30, 30, 0.5);
+    background-color: rgb(96, 105, 236);
+    padding: 1em;
+    width: 22em;
+    margin: auto;
+    position: relative;
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    overflow: hidden;
+}
+
+heading{
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+tracks:hover {
+    height: 23em;
+}
+
+#A7 tracks:hover{
+    height: 38em;
+}
+
+#A8 tracks:hover{
+    height: 35em;
+}
+
+#A14 tracks:hover{
+    height: 27em;
+}
+
+#A15 tracks:hover{
+    height: 30em;
+}
+
+#A18 tracks:hover{
+    height: 10em;
+}
+
+song number{
+    display: inline;
+}
+
+song trackTitle{
+    display: inline;
+}
+
+song trackLenght{
+    display: inline;
+}
+
+
+tracks number::after{
+    content: '. '
+}
+
+tracks trackLenght::after {
+    content: 's'
+}
+
+tracks trackLenght::before{
+    content: ' | '
+}
+
+
+
+/*album top song */
+
+album topSong {
+    display: block;
+	font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(194, 221, 40, 0.5);
+    margin: 2em 2em;
+}
+
+
+album title::before {
+    content: 'Title: '
+}
+
+album lenght::before {
+    content: 'Time: '
+}
+
+album lenght::after {
+    content: 's'
+}
+
+album producer::before {
+    content: 'Producer: '
+}
+
+album trackNumber::before {
+    content: 'Track number: '
+}

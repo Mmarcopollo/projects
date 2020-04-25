@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="album.js"></script>
+    <title>ALBUM</title>
+    <style>
+        body {
+           background-image: url("background.jpg");
+        }
+     </style>
+</head>
+
+<body>
+    <div class="p-5">
+        <h1 class="col-md-12 d-flex text-white justify-content-center">ALBUM</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div>
+                    <h2 class="d-flex text-white justify-content-center">INFO</h2>
+                </div>
+
+                <div id="albumList" class="row d-flex justify-content-center rounded p-3 pl-5">
+                    <table id="albumTable" class="table table-dark table-striped table-bordered col-md-12 ">
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div>
+                    <h2 class="row text-white d-flex justify-content-center">TOP SONG</h2>
+                </div>
+                <div id="typesList" class="row d-flex justify-content-center rounded p-3 pl-5">
+                    <table id="topSongTable" class="table table-dark table-striped table-bordered col-md-12 ">
+                        <tbody></tbody>
+                    </table>
+                </div>
+                <div class="p-5 text-center">
+                    <input type="button" class="btn btn-dark p-3" value="Back" onclick="back()" />
+                </div>
+            </div>
+            <div class="col-sm">
+                <div>
+                    <h2 class="d-flex  text-white justify-content-center">TRACK LIST</h2>
+                </div>
+                <div id="trackList" class="row d-flex justify-content-center rounded p-3 pl-5">
+                    <table id="trackTable" class="table table-dark table-striped table-bordered col-md-12 ">
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

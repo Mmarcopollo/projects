@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="img/Rowdyruff_Boys.jpg" />
+    <title>Main Page</title>
+</head>
+
+<body>
+	<header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md" class="d-inline-block mx-1 align-bottom">
+
+            <a class="navbar-brand" href="#"><img src="img/Rowdyruff_Boys.jpg" width="30" height="30" alt=""> Rowdyruff
+                Boys</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Start
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+	<div class="login-page">
+	  <div class="form">
+		<form class="login-form">
+				<a href="signinAsCandidate.html" class="btn btn-primary btn-lg btn-block">Sign in as a candidate</a>
+				<br>
+                <a href="signin.html" class="btn btn-primary btn-lg btn-block">Sign in as a recruiter</a>
+                <br>
+                <a href="register.html" class="btn btn-warning btn-lg btn-block">Sign up for recruiter</a>
+				<br>
+				
+				<div class="form-group">
+					<label for="elo"></label>
+					<input type="text" class="form-control" id="elo" aria-describedby="emailHelp" placeholder="Enter text">
+					<small id="emailHelp" class="form-text text-muted">Select your text and click find synonym.</small>
+				</div>
+				<a href="#" class="btn btn-primary btn-lg btn-block" id="witam">Find synonym</a>
+				<br>
+		</form>
+	  </div>
+	</div>
+	<script src="js/vendor/jquery-3.1.0.js"></script>
+      <script src="js/vendor/bootstrap.min.js"></script>
+      <script src="js/vendor/aws-cognito-sdk.min.js"></script>
+      <script src="js/vendor/amazon-cognito-identity.min.js"></script>
+	<script src="scripts.js"></script>
+	<script>
+		
+		$(function onDocReady() {
+			$('#witam').click(function() {
+				
+				<!-- var selObj = window.getSelection();  -->
+				<!-- alert(selObj); -->
+				<!-- let text = selObj.toString(); -->
+				let text = document.getElementById('elo').value;
+				let url = "https://dictionary.yandex.net/api/v1/dicservice.json/lookup?key=dict.1.1.20191230T110607Z.67ee80aaff673d64.91f4ec360d12511dd6be5aaa55ae8b24ef99214f&lang=en-en&text=";
+				url = url + text;
+				
+				$.ajax({url: url, success: function(result){
+					console.log(result);
+					var json = result;
+					if(json.def[0] == null || json.def[0].tr[0].syn == null){
+						alert("There is no synonym for: " + text);
+					} else {
+						let synonyms = "";
+						for (i = 0; i < json.def[0].tr[0].syn.length; i++) {
+							if(i != json.def[0].tr[0].syn.length - 1) {
+								synonyms += json.def[0].tr[0].syn[i].text + ", ";
+							} else {
+								synonyms += json.def[0].tr[0].syn[i].text + ".";
+							}
+							
+						}
+						if(json.def[0].tr[0].syn.length > 1) {
+							alert("Synonyms for word " + text + " are: " + synonyms);
+						} else {
+							alert("Synonym for word " + text + " is: " + synonyms);
+						}
+						
+					}
+				  }});
+				
+			});
+		});
+	</script>
+</body>
+</html>

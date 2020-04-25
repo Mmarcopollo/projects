@@ -1,0 +1,34 @@
+
+    
+    
+REPORT: 
+
+AUTHOR                        |   Marek Szafran (210329)
+GENERATED                     |   2019-12-03
+NUMBER OF OF TYPES OF ALBUMS  |   18
+TOTAL PRICE OF ALBUMS         |   631.82zł
+AVARAGE PRICE OF ALBUMS       |   35.1zł
+HIGHEST PRICE OF ALBUMS       |   50.99zł
+LOWEST PRICE OF ALBUMS        |   18.99zł
+
+ALBUMS: 
+
+Czerwony Dywan                                             |     HIP-HOP
+Wojtek Sokół                                               |     HIP-HOP
+Heart to Mouth                                             |     POP
+Malomiasteczkowy                                           |     POP
+Nevermind                                                  |     ROCK
+Appetite For Destruction                                   |     ROCK
+Lightbulb Sun                                              |     ROCK
+Shrine of New Generation Slaves                            |     ROCK
+Animals                                                    |     ROCK
+Amelie from Montmartre (Original SoundTrack                |     CLASICAL
+Interstellar (Original Motion Picture Sountrack)           |     CLASICAL
+Metallica                                                  |     METAL
+Highway to Hell                                            |     METAL
+Czar Miłości                                               |     DISCO POLO
+The greatest hits                                          |     DISCO POLO
+Ona Tańczy Dla Mnie                                        |     DISCO POLO
+Przebojowa                                                 |     DISCO POLO
+Złote przeboje                                             |     DISCO POLO
+

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1625474400667274}
+  m_IsPrefabAsset: 1
+--- !u!1 &1625474400667274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4508685746369384}
+  - component: {fileID: 114464817201556542}
+  m_Layer: 0
+  m_Name: MinigunWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4508685746369384
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1625474400667274}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -346.41537, y: -227.104, z: 0}
+  m_LocalScale: {x: 1.183815, y: 1.183815, z: 1.183815}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114464817201556542
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1625474400667274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9975d7e1f098c6e4b84ab4a0fb9cdd98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Mingun
+  Description: 
+  CurrentWeaponSprite: {fileID: 21300000, guid: 266635b2c78dcd24aa4a528dccc5be8a,
+    type: 3}
+  Color: {r: 1, g: 1, b: 1, a: 0.29803923}
+  Animation: {fileID: 1975988677929538, guid: 4bf62f1acab1eec4fba83a5fbc267365, type: 2}
+  IdleSprite: {fileID: 1066458427408086, guid: 2c69ed6936639eb4cab3265d51786595, type: 2}
+  cursor: {fileID: 2800000, guid: 1de23acfbc067e44e838f02e2fba2d51, type: 3}
+  additionalDamage: 5
+  additionalEnergyDecrement: 15

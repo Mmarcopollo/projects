@@ -1,0 +1,54 @@
+﻿<Window x:Class="ViewWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ViewModel;assembly=ViewModel"
+        xmlns:viewWPF="clr-namespace:ViewWPF.Convert"
+        mc:Ignorable="d"
+        Title="Reflection project" Height="600" Width="500"
+        ResizeMode="NoResize">
+
+    
+    <Window.DataContext>
+        <local:TreeViewModel/>
+    </Window.DataContext>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="402*"/>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="53*"/>
+        </Grid.ColumnDefinitions>
+
+        <TreeView x:Name="TreeViewDll" HorizontalAlignment="Left" Height="320" Margin="50,142,0,0"
+                  VerticalAlignment="Top" Width="391" Grid.ColumnSpan="3"
+                  ItemsSource="{Binding  HierarchicalAreas, Mode=TwoWay}" >
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding Path=Children}">
+                    <TextBlock>
+                        <TextBlock Padding="0 0 10 0" FontWeight="Bold" Text="{Binding Converter={x:Static viewWPF:ToStringConverter.Instance}}" Foreground="{Binding  Converter={x:Static viewWPF:ToBrushConverter.Instance}}"/>
+                        <TextBlock Text="{Binding Path=Name}" Margin="0,0,4,0" />
+                    </TextBlock>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+            <TreeView.ItemContainerStyle>
+                <Style TargetType="TreeViewItem">
+                    <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                </Style>
+            </TreeView.ItemContainerStyle>
+        </TreeView>
+
+        <Button Content="Load tree" HorizontalAlignment="Left" Margin="366,502,0,0" VerticalAlignment="Top" 
+                Width="75" Grid.ColumnSpan="3"  Command="{Binding LoadDllCmd}"/>
+        <Button Content="Serialize" HorizontalAlignment="Left" Margin="258,502,0,0" VerticalAlignment="Top" 
+                Width="75"  Command="{Binding SerializeCommand}"/>
+        <Button Content="Deserialize" HorizontalAlignment="Left" Margin="137,502,0,0" VerticalAlignment="Top" 
+                Width="75"  Command="{Binding DeserializeCommand}" RenderTransformOrigin="-0.561,0.575"/>
+
+        <TextBox Text="{Binding Mode=OneWay,Path=PathVariable,UpdateSourceTrigger=PropertyChanged}"  
+                 HorizontalAlignment="Left" Height="38" Margin="50,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="391" Grid.ColumnSpan="3"/>
+        <Button x:Name="Browse" Content="Browse" Command="{Binding BrowseCmd}"
+                HorizontalAlignment="Left" Margin="356,95,0,0" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

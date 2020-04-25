@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/Albumy"
+	xmlns:own="http://www.example.org/Albumy"
+	elementFormDefault="qualified">
+
+	<!--Album Collection -->
+	<xsd:element name="albumCollection">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="own:info" />
+				<xsd:element ref="own:types" />
+				<xsd:element ref="own:albums" />
+			</xsd:sequence>
+		</xsd:complexType>
+
+		<!--Keys -->
+		<xsd:key name="typeKey">
+			<xsd:selector xpath="types/type" />
+			<xsd:field xpath="@typeId" />
+		</xsd:key>
+
+		<xsd:keyref name="typeKeyRef" refer="own:typeKey">
+			<xsd:selector xpath="albums/album" />
+			<xsd:field xpath="@typeId" />
+		</xsd:keyref>
+
+	</xsd:element>
+
+	<!--Info -->
+	<xsd:element name="info">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="own:creator" />
+				<xsd:element name="topic" type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="creator">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base='xsd:string'>
+					<xsd:attribute name="index">
+						<xsd:simpleType>
+							<xsd:restriction base='xsd:integer'>
+								<xsd:pattern value="[0-9][0-9][0-9][0-9][0-9][0-9]" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+	<!--Types -->
+	<xsd:element name="types">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="unbounded" ref="own:type" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="type">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="own:name" />
+				<xsd:element ref="own:countryOfOrigin" />
+				<xsd:element ref="own:time" />
+			</xsd:sequence>
+			<xsd:attribute name="id" use="required"
+				type="xsd:NCName" />
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="name" type="xsd:string" />
+
+	<xsd:element name="countryOfOrigin">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base='xsd:string'>
+					<xsd:attribute name='continent' use='required'>
+						<xsd:simpleType>
+							<xsd:restriction base='xsd:string'>
+								<xsd:enumeration value='Europe' />
+								<xsd:enumeration value='Asia' />
+								<xsd:enumeration value='North_America' />
+								<xsd:enumeration value='South_America' />
+								<xsd:enumeration value='Africa' />
+								<xsd:enumeration value='Austalia_and_Oceania' />
+								<xsd:enumeration value='Europe_North_America' />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+
+
+
+
+	<xsd:element name="time">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base='xsd:string'>
+					<xsd:attribute name="age" use="required">
+						<xsd:simpleType>
+							<xsd:restriction base='xsd:string'>
+								<xsd:pattern value="[IXV][IXV]" />
+							</xsd:restriction>
+						</xsd:simpleType>
+					</xsd:attribute>
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+
+	<!--Albums -->
+	<xsd:element name="albums">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="unbounded" ref="own:album" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="album">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="own:author" />
+				<xsd:element ref="own:title" />
+				<xsd:element ref="own:topSong" />
+				<xsd:element ref="own:releaseDate" />
+				<xsd:element ref="own:price" />
+				<xsd:element ref="own:tracks" />
+			</xsd:sequence>
+			<xsd:attribute name="id" use="required"
+				type="xsd:NCName" />
+			<xsd:attribute name="typeId" use="required"
+				type="xsd:NCName" />
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="topSong">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:group ref="own:topSongData" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:group name="topSongData">
+		<xsd:sequence>
+			<xsd:element name="title" type="xsd:string" />
+			<xsd:element name="lenght">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:pattern value="([0-9])?[0-9]:[0-9][0-9]" />
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+			<xsd:element name="producer" type="xsd:string" />
+			<xsd:element name="trackNumber"
+				type="own:trackNumberType" />
+		</xsd:sequence>
+	</xsd:group>
+
+	<xsd:simpleType name="trackNumberType">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="0" />
+			<xsd:maxInclusive value="199" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:element name="tracks">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="heading" />
+				<xsd:element maxOccurs="unbounded" ref="own:song" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element name="song">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:group ref="own:songData" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+	<xsd:group name="songData">
+		<xsd:sequence>
+			<xsd:element name="trackNumber"
+				type="own:trackNumberType" />
+			<xsd:element name="trackTitle" type="xsd:string" />
+			<xsd:element name="trackLenght">
+				<xsd:simpleType>
+					<xsd:restriction base="xsd:string">
+						<xsd:pattern value="([0-9])?[0-9]:[0-9][0-9]" />
+					</xsd:restriction>
+				</xsd:simpleType>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:group>
+
+
+	<xsd:element name="releaseDate" type="own:releaseDateType" />
+	<xsd:simpleType name="releaseDateType">
+		<xsd:restriction base="xsd:NMTOKEN">
+			<xsd:pattern
+				value="[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:element name="price">
+		<xsd:complexType mixed="true">
+			<xsd:simpleContent>
+				<xsd:extension base='xsd:float'>
+					<xsd:attribute name='currency' type='xsd:NMTOKEN'
+						use='required' />
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+
+
+
+
+	<xsd:element name="author" type="xsd:string" />
+	<xsd:element name="title" type="xsd:string" />
+
+
+
+</xsd:schema>
