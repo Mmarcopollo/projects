@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<albumCollection>
+    <info>
+        <author index="210329">Marek Szafran</author>
+        <topic>Music genres and albums:</topic>
+    </info>
+    <types>
+        <type id="G1">
+            <name>HipHop</name>
+            <countryoforigin continent="North_America">USA</countryoforigin>
+            <time age="XX">70's</time>
+        </type>
+
+        <type id="G2">
+            <name>Pop</name>
+            <countryoforigin continent="Europe_North_America">USA/UK</countryoforigin>
+            <time age="XX"> 60's</time>
+        </type>
+
+        <type id="G3">
+            <name>Rock</name>
+            <countryoforigin continent="North_America">USA</countryoforigin>
+            <time age="XX">40's</time>
+        </type>
+
+        <type id="G4">
+            <name>ClasicalMusic</name>
+            <countryoforigin continent="Europe">European countries</countryoforigin>
+            <time age="XI">50's</time>
+        </type>
+
+        <type id="G5">
+            <name>Metal</name>
+            <countryoforigin continent="Europe_North_America">USA/UK</countryoforigin>
+            <time age="XX">60's</time>
+        </type>
+
+        <type id="G6">
+            <name>DiscoPolo</name>
+            <countryoforigin continent="Europe">Poland</countryoforigin>
+            <time age="XX">80's</time>
+        </type>
+
+    </types>
+
+
+    <albums>
+        <album id="A1" typeId="G1">
+            <author>Paluch</author>
+            <title>Czerwony Dywan</title>
+            <topsong>
+                <title>"Ładni Smutni Ludzie"</title>
+                <lenght>3:36</lenght>
+                <producer>SoDrumatic</producer>
+                <trackNumber>4</trackNumber>
+            </topsong>
+            <releasedate>2018-12-07</releasedate>
+            <price currency="zł">34,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Intro</trackTitle>
+                    <trackLenght>2:55</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Czerwony Dywan</trackTitle>
+                    <trackLenght>3:45</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Balans</trackTitle>
+                    <trackLenght>4:30</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Ładzni smutni ludzie</trackTitle>
+                    <trackLenght>3:36</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Nie myśl o tym</trackTitle>
+                    <trackLenght>4:02</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Nowa Polska</trackTitle>
+                    <trackLenght>3:40</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Mój kościół</trackTitle>
+                    <trackLenght>4:11</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Sidła</trackTitle>
+                    <trackLenght>3:18</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Opozycja</trackTitle>
+                    <trackLenght>3:43</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Spłata</trackTitle>
+                    <trackLenght>4:05</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>Pudle</trackTitle>
+                    <trackLenght>3:26</trackLenght>
+                </song>
+                <song>
+                    <number>12</number>
+                    <trackTitle>Amalgamat</trackTitle>
+                    <trackLenght>4:05</trackLenght>
+                </song>
+                <song>
+                    <number>13</number>
+                    <trackTitle>Peeling</trackTitle>
+                    <trackLenght>4:23</trackLenght>
+                </song>
+                <song>
+                    <number>14</number>
+                    <trackTitle>Życie wieczne</trackTitle>
+                    <trackLenght>3:07</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A2" typeId="G1">
+            <author>Sokól</author>
+            <title>Wojtek Sokół</title>
+            <topsong>
+                <title>"Lepiej jak jest lepiej"</title>
+                <lenght>4:17</lenght>
+                <producer>Sokół</producer>
+                <trackNumber>2</trackNumber>
+            </topsong>
+            <releasedate>2019-02-15</releasedate>
+            <price currency="zł">38,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Hybryda</trackTitle>
+                    <trackLenght>3:59</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Lepiej jak jest lepiej</trackTitle>
+                    <trackLenght>4:17</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Pluszowy</trackTitle>
+                    <trackLenght>3:30</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Pomyłka</trackTitle>
+                    <trackLenght>3:32</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Sprytny eskimos</trackTitle>
+                    <trackLenght>4:14</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>I tak i nie</trackTitle>
+                    <trackLenght>3:33</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Za ręce</trackTitle>
+                    <trackLenght>4:47</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Nie da na da</trackTitle>
+                    <trackLenght>3:41</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Napad na bankiet</trackTitle>
+                    <trackLenght>4:48</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Z tobą</trackTitle>
+                    <trackLenght>4:14</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>Skażony</trackTitle>
+                    <trackLenght>3:43</trackLenght>
+                </song>
+                <song>
+                    <number>12</number>
+                    <trackTitle>MC Hasselblad</trackTitle>
+                    <trackLenght>3:55</trackLenght>
+                </song>
+                <song>
+                    <number>13</number>
+                    <trackTitle>Koniec gatunku</trackTitle>
+                    <trackLenght>5:00</trackLenght>
+                </song>
+                <song>
+                    <number>14</number>
+                    <trackTitle>Chcemy być wyżej</trackTitle>
+                    <trackLenght>3:09</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A3" typeId="G2">
+            <author>LP</author>
+            <title>Heart to Mouth</title>
+            <topsong>
+                <title>"Girls Go Wild"</title>
+                <lenght>3:44</lenght>
+                <producer>Del Rio</producer>
+                <trackNumber>4</trackNumber>
+            </topsong>
+            <releasedate>2018-12-07</releasedate>
+            <price currency="zł">38,99</price>
+
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Dreamcatcher</trackTitle>
+                    <trackLenght>3:15</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>When I"m over You</trackTitle>
+                    <trackLenght>4:27</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>One night in the sun</trackTitle>
+                    <trackLenght>4:24</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Girls go wild</trackTitle>
+                    <trackLenght>3:44</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Recovery</trackTitle>
+                    <trackLenght>3:52</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>The Power</trackTitle>
+                    <trackLenght>4:38</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Dreamer</trackTitle>
+                    <trackLenght>3:25</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>House on fire</trackTitle>
+                    <trackLenght>3:01</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Hey nice to know ya</trackTitle>
+                    <trackLenght>3:24</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Die for your love</trackTitle>
+                    <trackLenght>3:40</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>Shaken</trackTitle>
+                    <trackLenght>3:45</trackLenght>
+                </song>
+                <song>
+                    <number>12</number>
+                    <trackTitle>Special</trackTitle>
+                    <trackLenght>4:21</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A4" typeId="G2">
+            <author>Dawid Podsiadło</author>
+            <title>Malomiasteczkowy</title>
+            <topsong>
+                <title>"Małomiasteczkowy"</title>
+                <lenght>3:23</lenght>
+                <producer>Bartosz Dziedzic</producer>
+                <trackNumber>3</trackNumber>
+            </topsong>
+            <releasedate>2018-06-06</releasedate>
+            <price currency="zł">36,99</price>
+
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Cantate tutti</trackTitle>
+                    <trackLenght>3:07</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Dżins</trackTitle>
+                    <trackLenght>5:12</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Małomiesteczkowy</trackTitle>
+                    <trackLenght>3:23</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Najnowszy klip</trackTitle>
+                    <trackLenght>3:50</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Trofea</trackTitle>
+                    <trackLenght>3:45</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Nie ma fal</trackTitle>
+                    <trackLenght>3:58</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>LIS</trackTitle>
+                    <trackLenght>4:30</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Co mówimy?</trackTitle>
+                    <trackLenght>3:38</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Nie kłami</trackTitle>
+                    <trackLenght>3:16</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Matylda</trackTitle>
+                    <trackLenght>5:14</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A5" typeId="G3">
+            <author>Nirvana</author>
+            <title>Nevermind</title>
+            <topsong>
+                <title>"Smells Like Teen Spirit"</title>
+                <lenght>5:02</lenght>
+                <producer>Butch Vig</producer>
+                <trackNumber>1</trackNumber>
+            </topsong>
+            <releasedate>1991-09-24</releasedate>
+            <price currency="zł">34,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Smells like ten spirits</trackTitle>
+                    <trackLenght>5:02</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>In bloom-Neverwind Version</trackTitle>
+                    <trackLenght>4:15</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Come As You Are</trackTitle>
+                    <trackLenght>3:39</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Breed</trackTitle>
+                    <trackLenght>3:04</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Lithium</trackTitle>
+                    <trackLenght>4:17</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Polly</trackTitle>
+                    <trackLenght>2:54</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Territorials Pissings</trackTitle>
+                    <trackLenght>2:23</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Drain you</trackTitle>
+                    <trackLenght>3:44</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Lounge act</trackTitle>
+                    <trackLenght>2:36</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Stay away</trackTitle>
+                    <trackLenght>3:31</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>On a plain</trackTitle>
+                    <trackLenght>3:14</trackLenght>
+                </song>
+                <song>
+                    <number>12</number>
+                    <trackTitle>Something in the way</trackTitle>
+                    <trackLenght>3:52</trackLenght>
+                </song>
+                <song>
+                    <number>13</number>
+                    <trackTitle>Endless, nameless</trackTitle>
+                    <trackLenght>6:43</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A6" typeId="G3">
+            <author>Guns N' Roses</author>
+            <title>Appetite For Destruction</title>
+            <topsong>
+                <title>"Sweet Child O' Mine"</title>
+                <lenght>5:55</lenght>
+                <producer>Mike Clink</producer>
+                <trackNumber>9</trackNumber>
+            </topsong>
+            <releasedate>1987-07-21</releasedate>
+            <price currency="zł">18,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Welcome to the jungle</trackTitle>
+                    <trackLenght>4:33</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>It's so easy</trackTitle>
+                    <trackLenght>3:23</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Nightrain</trackTitle>
+                    <trackLenght>4:28</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Out ta get me</trackTitle>
+                    <trackLenght>4:24</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Mr. Brownstone</trackTitle>
+                    <trackLenght>3:49</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Paradise City</trackTitle>
+                    <trackLenght>6:46</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>My Michelle</trackTitle>
+                    <trackLenght>3:40</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Think about you</trackTitle>
+                    <trackLenght>3:52</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Sweet Child O' mine</trackTitle>
+                    <trackLenght>5:56</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>You're crazy</trackTitle>
+                    <trackLenght>3:26</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>Anything goes</trackTitle>
+                    <trackLenght>3:26</trackLenght>
+                </song>
+                <song>
+                    <number>12</number>
+                    <trackTitle>Rochet Queen</trackTitle>
+                    <trackLenght>4:05</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A7" typeId="G4">
+            <author>Yann Tiersen</author>
+            <title>Amelie from Montmartre (Original SoundTrack</title>
+            <topsong>
+                <title>"Comptine d'un autre été : L'après-midi"</title>
+                <lenght>2:20</lenght>
+                <producer>Yann Tiersen</producer>
+                <trackNumber>4</trackNumber>
+            </topsong>
+            <releasedate>2001-04-23</releasedate>
+            <price currency="zł">31,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>I've never been there</trackTitle>
+                    <trackLenght>1:34</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Les jours tristes</trackTitle>
+                    <trackLenght>3:03</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>La Valse d'Amelie</trackTitle>
+                    <trackLenght>2:16</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Compione d'un autre ete</trackTitle>
+                    <trackLenght>2:21</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>The drowned girl</trackTitle>
+                    <trackLenght>2:03</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>L'Autre valse d'Amelie</trackTitle>
+                    <trackLenght>1:33</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Guilty</trackTitle>
+                    <trackLenght>3:13</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>A quai</trackTitle>
+                    <trackLenght>3:32</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Le Moulin</trackTitle>
+                    <trackLenght>4:28</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Not that simple</trackTitle>
+                    <trackLenght>1:53</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>La Valse d'Amelie</trackTitle>
+                    <trackLenght>2:00</trackLenght>
+                </song>
+                <song>
+                    <number>12</number>
+                    <trackTitle>La Valse des vieux os</trackTitle>
+                    <trackLenght>2:20</trackLenght>
+                </song>
+                <song>
+                    <number>13</number>
+                    <trackTitle>Dispute</trackTitle>
+                    <trackLenght>4:15</trackLenght>
+                </song>
+                <song>
+                    <number>14</number>
+                    <trackTitle>Si tu n'stis pas la</trackTitle>
+                    <trackLenght>3:29</trackLenght>
+                </song>
+                <song>
+                    <number>15</number>
+                    <trackTitle>Evening party</trackTitle>
+                    <trackLenght>2:56</trackLenght>
+                </song>
+                <song>
+                    <number>16</number>
+                    <trackTitle>La Decouverte</trackTitle>
+                    <trackLenght>3:29</trackLenght>
+                </song>
+                <song>
+                    <number>17</number>
+                    <trackTitle>On the wire</trackTitle>
+                    <trackLenght>4:24</trackLenght>
+                </song>
+                <song>
+                    <number>18</number>
+                    <trackTitle>Banquet</trackTitle>
+                    <trackLenght>1:31</trackLenght>
+                </song>
+                <song>
+                    <number>19</number>
+                    <trackTitle>La valse d'Amelie</trackTitle>
+                    <trackLenght>2:39</trackLenght>
+                </song>
+                <song>
+                    <number>20</number>
+                    <trackTitle>The waltz of the monster</trackTitle>
+                    <trackLenght>3:40</trackLenght>
+                </song>
+                <song>
+                    <number>21</number>
+                    <trackTitle>L'Autre valse d'Amelie</trackTitle>
+                    <trackLenght>1:41</trackLenght>
+                </song>
+                <song>
+                    <number>22</number>
+                    <trackTitle>Les deux pianos</trackTitle>
+                    <trackLenght>1:58</trackLenght>
+                </song>
+                <song>
+                    <number>23</number>
+                    <trackTitle>Comptine d'un autre ete</trackTitle>
+                    <trackLenght>2:01</trackLenght>
+                </song>
+                <song>
+                    <number>24</number>
+                    <trackTitle>La Maison</trackTitle>
+                    <trackLenght>2:04</trackLenght>
+                </song>
+                <song>
+                    <number>25</number>
+                    <trackTitle>La valse d'Amelie</trackTitle>
+                    <trackLenght>2:03</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A8" typeId="G4">
+            <author>Hans Zimmer</author>
+            <title>Interstellar (Original Motion Picture Sountrack)</title>
+            <topsong>
+                <title>"Cornfield Chase"</title>
+                <lenght>2:07</lenght>
+                <producer>Hans Zimmer</producer>
+                <trackNumber>2</trackNumber>
+            </topsong>
+            <releasedate>2014-11-17</releasedate>
+            <price currency="zł">43,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Dreaming of the crash</trackTitle>
+                    <trackLenght>3:56</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Corbfield chase</trackTitle>
+                    <trackLenght>2:07</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Dust</trackTitle>
+                    <trackLenght>5:41</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Day one</trackTitle>
+                    <trackLenght>3:19</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Stay</trackTitle>
+                    <trackLenght>6:52</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Messege form home</trackTitle>
+                    <trackLenght>1:41</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>The wormhole</trackTitle>
+                    <trackLenght>1:31</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Mountains</trackTitle>
+                    <trackLenght>3:39</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Afraid of time</trackTitle>
+                    <trackLenght>2:33</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>A place among stars</trackTitle>
+                    <trackLenght>3:27</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>Running out</trackTitle>
+                    <trackLenght>1:57</trackLenght>
+                </song>
+                <song>
+                    <number>12</number>
+                    <trackTitle>I'm going home</trackTitle>
+                    <trackLenght>5:49</trackLenght>
+                </song>
+                <song>
+                    <number>13</number>
+                    <trackTitle>Coward</trackTitle>
+                    <trackLenght>8:27</trackLenght>
+                </song>
+                <song>
+                    <number>14</number>
+                    <trackTitle>Detach</trackTitle>
+                    <trackLenght>6:42</trackLenght>
+                </song>
+                <song>
+                    <number>15</number>
+                    <trackTitle>S.T.A.Y.</trackTitle>
+                    <trackLenght>6:24</trackLenght>
+                </song>
+                <song>
+                    <number>16</number>
+                    <trackTitle>Where we're going</trackTitle>
+                    <trackLenght>7:41</trackLenght>
+                </song>
+                <song>
+                    <number>17</number>
+                    <trackTitle>First step</trackTitle>
+                    <trackLenght>1:48</trackLenght>
+                </song>
+                <song>
+                    <number>18</number>
+                    <trackTitle>Flying drone</trackTitle>
+                    <trackLenght>1:53</trackLenght>
+                </song>
+                <song>
+                    <number>19</number>
+                    <trackTitle>Atmosphere entry</trackTitle>
+                    <trackLenght>1:41</trackLenght>
+                </song>
+                <song>
+                    <number>20</number>
+                    <trackTitle>No need to come back</trackTitle>
+                    <trackLenght>4:33</trackLenght>
+                </song>
+                <song>
+                    <number>21</number>
+                    <trackTitle>Imperfect lock</trackTitle>
+                    <trackLenght>6:55</trackLenght>
+                </song>
+                <song>
+                    <number>22</number>
+                    <trackTitle>No time for caution</trackTitle>
+                    <trackLenght>4:06</trackLenght>
+                </song>
+                <song>
+                    <number>23</number>
+                    <trackTitle>What Happens Now?</trackTitle>
+                    <trackLenght>2:26</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A9" typeId="G5">
+            <author>Metallica</author>
+            <title>Metallica</title>
+            <topsong>
+                <title>"Enter Sandman"</title>
+                <lenght>5:31</lenght>
+                <producer>James Hetfield</producer>
+                <trackNumber>1</trackNumber>
+            </topsong>
+            <releasedate>1991-10-12</releasedate>
+            <price currency="zł">50,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Enter sandman</trackTitle>
+                    <trackLenght>5:31</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Sad but true</trackTitle>
+                    <trackLenght>5:24</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Holier than you</trackTitle>
+                    <trackLenght>3:48</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>The Unforgiven</trackTitle>
+                    <trackLenght>6:26</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Whereever I may roam</trackTitle>
+                    <trackLenght>6:44</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Don't tread on me</trackTitle>
+                    <trackLenght>4:00</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Through the never</trackTitle>
+                    <trackLenght>4:03</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Nothing else metters</trackTitle>
+                    <trackLenght>6:28</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Of wolf and man</trackTitle>
+                    <trackLenght>4:17</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>The god that failed</trackTitle>
+                    <trackLenght>5:09</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>My friend of mistery</trackTitle>
+                    <trackLenght>6:48</trackLenght>
+                </song>
+                <song>
+                    <number>12</number>
+                    <trackTitle>The struggle within</trackTitle>
+                    <trackLenght>3:54</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A10" typeId="G5">
+            <author>AC/DC</author>
+            <title>Highway to Hell</title>
+            <topsong>
+                <title>"Highway to Hell"</title>
+                <lenght>3:28</lenght>
+                <producer>Robert John Lange</producer>
+                <trackNumber>1</trackNumber>
+            </topsong>
+            <releasedate>1979-07-27</releasedate>
+            <price currency="zł">40,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Highway to hell</trackTitle>
+                    <trackLenght>3:28</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Girls got rythm</trackTitle>
+                    <trackLenght>3:23</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Walk all over you</trackTitle>
+                    <trackLenght>5:10</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Touch too much</trackTitle>
+                    <trackLenght>4:26</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Beating around the bush</trackTitle>
+                    <trackLenght>3:56</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Shot down in flame</trackTitle>
+                    <trackLenght>3:23</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Get it hot</trackTitle>
+                    <trackLenght>2:35</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>If you want blood</trackTitle>
+                    <trackLenght>4:34</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Love hungry man</trackTitle>
+                    <trackLenght>4:17</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Night prowler</trackTitle>
+                    <trackLenght>6:28</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A11" typeId="G6">
+            <author>Akcent</author>
+            <title>Czar Miłości</title>
+            <topsong>
+                <title>"To Właśnie Ja"</title>
+                <lenght>5:45</lenght>
+                <producer>Zenon Martyniuk</producer>
+                <trackNumber>1</trackNumber>
+            </topsong>
+            <releasedate>1995-12-06</releasedate>
+            <price currency="zł">42,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>To właśnie ja</trackTitle>
+                    <trackLenght>5:45</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Twe czarne oczy</trackTitle>
+                    <trackLenght>4:37</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Nie żal tej miłości</trackTitle>
+                    <trackLenght>3:54</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Nie ze mną</trackTitle>
+                    <trackLenght>3:01</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Moja piosenka</trackTitle>
+                    <trackLenght>4:21</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Kołysanka dla ukochanej</trackTitle>
+                    <trackLenght>4:19</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Przez cierniste drogi</trackTitle>
+                    <trackLenght>4:04</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Sonet dla miłości</trackTitle>
+                    <trackLenght>3:54</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Znajdź panne jak marzenie</trackTitle>
+                    <trackLenght>4:22</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Powiedz mamo</trackTitle>
+                    <trackLenght>2:31</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A12" typeId="G6">
+            <author>Sławomir</author>
+            <title>The greatest hits</title>
+            <topsong>
+                <title>"Miłość w Zakopanem"</title>
+                <lenght>3:45</lenght>
+                <producer>Joanna Rząsa</producer>
+                <trackNumber>4</trackNumber>
+            </topsong>
+            <releasedate>2017-04-10</releasedate>
+            <price currency="zł">20,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Megiera</trackTitle>
+                    <trackLenght>2:53</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Ni mom hektara</trackTitle>
+                    <trackLenght>2:52</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Aneta</trackTitle>
+                    <trackLenght>4:03</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Miłość w Zakopanem</trackTitle>
+                    <trackLenght>3:45</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>We'll build the house</trackTitle>
+                    <trackLenght>2:59</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Nowy świat</trackTitle>
+                    <trackLenght>3:58</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Ty mała znów zarosłaś</trackTitle>
+                    <trackLenght>2:29</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Małgosia Socha</trackTitle>
+                    <trackLenght>3:02</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Super hero man</trackTitle>
+                    <trackLenght>3:26</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>To tylko miłość</trackTitle>
+                    <trackLenght>4:33</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>Nic się nie stało</trackTitle>
+                    <trackLenght>3:11</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A13" typeId="G6">
+            <author>Weekend</author>
+            <title>Ona Tańczy Dla Mnie</title>
+            <topsong >
+                <title>"Ona Tańczy Dla Mnie"</title>
+                <lenght>3:58</lenght>
+                <producer>Antoni Klimasz</producer>
+                <trackNumber>1</trackNumber>
+            </topsong>
+            <releasedate>2012-11-10</releasedate>
+            <price currency="zł">32,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Ona tańczy dla mnie</trackTitle>
+                    <trackLenght>3:58</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Za każdą chwile z tobą</trackTitle>
+                    <trackLenght>4:30</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Męska rzeczywistość</trackTitle>
+                    <trackLenght>4:28</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Zakochani wziąż jak nikt</trackTitle>
+                    <trackLenght>4:47</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Moje miasto nigdy nie śpi</trackTitle>
+                    <trackLenght>3:55</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Słodki jak wisienka</trackTitle>
+                    <trackLenght>4:53</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Męska rzeczywistość</trackTitle>
+                    <trackLenght>4:50</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Za każdą chwile z tobą</trackTitle>
+                    <trackLenght>3:32</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Ona tańczy dla mnie - RMX</trackTitle>
+                    <trackLenght>4:34</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Ona tańczy dla mnie - Extended</trackTitle>
+                    <trackLenght>3:26</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A14" typeId="G6">
+            <author>Boys</author>
+            <title>Przebojowa</title>
+            <topsong>
+                <title>"Szalona"</title>
+                <lenght>3:58</lenght>
+                <producer>Michał Basiuras</producer>
+                <trackNumber>8</trackNumber>
+            </topsong>
+            <releasedate>1997-07-1</releasedate>
+            <price currency="zł">28,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Ty i ja</trackTitle>
+                    <trackLenght>4:45</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Twój jeden uśmiech</trackTitle>
+                    <trackLenght>4:46</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Tylko ja</trackTitle>
+                    <trackLenght>3:38</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Łobuz</trackTitle>
+                    <trackLenght>3:59</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Kochana uwierz mi</trackTitle>
+                    <trackLenght>3:28</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Ostatni dzień, ostatnia noc</trackTitle>
+                    <trackLenght>3:56</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Chłop z mazur</trackTitle>
+                    <trackLenght>3:54</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Szalona</trackTitle>
+                    <trackLenght>3:58</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Noc</trackTitle>
+                    <trackLenght>4:20</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Miałaś 18 lat</trackTitle>
+                    <trackLenght>4:15</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>Biba</trackTitle>
+                    <trackLenght>4:11</trackLenght>
+                </song>
+                <song>
+                    <number>12</number>
+                    <trackTitle>Czy nie</trackTitle>
+                    <trackLenght>4:05</trackLenght>
+                </song>
+                <song>
+                    <number>13</number>
+                    <trackTitle>Usłysz wołanie</trackTitle>
+                    <trackLenght>4:14</trackLenght>
+                </song>
+                <song>
+                    <number>14</number>
+                    <trackTitle>Twe oczy</trackTitle>
+                    <trackLenght>4:02</trackLenght>
+                </song>
+                <song>
+                    <number>15</number>
+                    <trackTitle>Wolność</trackTitle>
+                    <trackLenght>3:50</trackLenght>
+                </song>
+                <song>
+                    <number>16</number>
+                    <trackTitle>Bawmy się</trackTitle>
+                    <trackLenght>3:42</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A15" typeId="G6">
+            <author>Bayer Full</author>
+            <title>Złote przeboje</title>
+            <topsong>
+                <title>"Blondyneczka"</title>
+                <lenght>2:38</lenght>
+                <producer>Roman Matuszewski</producer>
+                <trackNumber>3</trackNumber>
+            </topsong>
+            <releasedate>1995-09-12</releasedate>
+            <price currency="zł">23,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Prezydent</trackTitle>
+                    <trackLenght>3:10</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Szariko mariko</trackTitle>
+                    <trackLenght>2:45</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Blondyneczka</trackTitle>
+                    <trackLenght>2:38</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Nocka</trackTitle>
+                    <trackLenght>2:28</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Jaworzyna</trackTitle>
+                    <trackLenght>3:18</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Czekaj mnie dziewczyno</trackTitle>
+                    <trackLenght>3:01</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Koniczynka</trackTitle>
+                    <trackLenght>4:02</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Powrócisz znów</trackTitle>
+                    <trackLenght>3:22</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Kolorowe oczy</trackTitle>
+                    <trackLenght>3:15</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Oczekiwanie</trackTitle>
+                    <trackLenght>3:06</trackLenght>
+                </song>
+                <song>
+                    <number>11</number>
+                    <trackTitle>Pada śnieg</trackTitle>
+                    <trackLenght>3:05</trackLenght>
+                </song>
+                <song>
+                    <number>12</number>
+                    <trackTitle>Wspaniała matko</trackTitle>
+                    <trackLenght>3:30</trackLenght>
+                </song>
+                <song>
+                    <number>13</number>
+                    <trackTitle>Nie odchodź</trackTitle>
+                    <trackLenght>3:25</trackLenght>
+                </song>
+                <song>
+                    <number>14</number>
+                    <trackTitle>Szatynka</trackTitle>
+                    <trackLenght>2:31</trackLenght>
+                </song>
+                <song>
+                    <number>15</number>
+                    <trackTitle>Bosman</trackTitle>
+                    <trackLenght>4:30</trackLenght>
+                </song>
+                <song>
+                    <number>16</number>
+                    <trackTitle>Nie żałuj</trackTitle>
+                    <trackLenght>3:55</trackLenght>
+                </song>
+                <song>
+                    <number>17</number>
+                    <trackTitle>Polski duch</trackTitle>
+                    <trackLenght>2:35</trackLenght>
+                </song>
+                <song>
+                    <number>18</number>
+                    <trackTitle>Moja muzyka</trackTitle>
+                    <trackLenght>5:16</trackLenght>
+                </song>
+                <song>
+                    <number>19</number>
+                    <trackTitle>Złotowłosa anna</trackTitle>
+                    <trackLenght>3:50</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A16" typeId="G3">
+            <author>Porcupine Tree</author>
+            <title>Lightbulb Sun</title>
+            <topsong>
+                <title>"Shesmovedon"</title>
+                <lenght>5:14</lenght>
+                <producer>Steven Wilson</producer>
+                <trackNumber>4</trackNumber>
+            </topsong>
+            <releasedate>1995-22-05</releasedate>
+            <price currency="zł">49,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Lightbulb sun</trackTitle>
+                    <trackLenght>5:32</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>How is your life today?</trackTitle>
+                    <trackLenght>2:47</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Four hords that made a milion</trackTitle>
+                    <trackLenght>3:37</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Shesmovedon</trackTitle>
+                    <trackLenght>5:14</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Last chance to evacuate planet</trackTitle>
+                    <trackLenght>4:50</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>The rest will flow</trackTitle>
+                    <trackLenght>3:18</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Hatesong</trackTitle>
+                    <trackLenght>8:30</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Where we would be</trackTitle>
+                    <trackLenght>4:13</trackLenght>
+                </song>
+                <song>
+                    <number>9</number>
+                    <trackTitle>Russia on ice</trackTitle>
+                    <trackLenght>13:06</trackLenght>
+                </song>
+                <song>
+                    <number>10</number>
+                    <trackTitle>Feel so low</trackTitle>
+                    <trackLenght>5:23</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A17" typeId="G3">
+            <author>Riverside</author>
+            <title>Shrine of New Generation Slaves</title>
+            <topsong>
+                <title>"The Depth of Self-Delusion"</title>
+                <lenght>7:40</lenght>
+                <producer>Mariusz Duda</producer>
+                <trackNumber>2</trackNumber>
+            </topsong>
+            <releasedate>2013-21-01</releasedate>
+            <price currency="zł">29,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>New generation slave</trackTitle>
+                    <trackLenght>4:17</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>The depth of self-delision</trackTitle>
+                    <trackLenght>7:40</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Celebrity touch</trackTitle>
+                    <trackLenght>6:47</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>We got used to us</trackTitle>
+                    <trackLenght>4:11</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Feel like folling</trackTitle>
+                    <trackLenght>5:18</trackLenght>
+                </song>
+                <song>
+                    <number>6</number>
+                    <trackTitle>Deprived</trackTitle>
+                    <trackLenght>8:26</trackLenght>
+                </song>
+                <song>
+                    <number>7</number>
+                    <trackTitle>Escalator shrine</trackTitle>
+                    <trackLenght>12:41</trackLenght>
+                </song>
+                <song>
+                    <number>8</number>
+                    <trackTitle>Coda</trackTitle>
+                    <trackLenght>1:39</trackLenght>
+                </song>
+            </tracks>
+        </album>
+
+        <album id="A18" typeId="G3">
+            <author>Pink Floyd</author>
+            <title>Animals</title>
+            <topsong>
+                <title>"Dogs"</title>
+                <lenght>17:05</lenght>
+                <producer>Pink Floyd</producer>
+                <trackNumber>2</trackNumber>
+            </topsong>
+            <releasedate>1977-23-01</releasedate>
+            <price currency="zł">29,99</price>
+            <tracks>
+                <heading>Track List:</heading>
+                <song>
+                    <number>1</number>
+                    <trackTitle>Pigs on the wing</trackTitle>
+                    <trackLenght>1:24</trackLenght>
+                </song>
+                <song>
+                    <number>2</number>
+                    <trackTitle>Dogs</trackTitle>
+                    <trackLenght>17:05</trackLenght>
+                </song>
+                <song>
+                    <number>3</number>
+                    <trackTitle>Pigs</trackTitle>
+                    <trackLenght>11:26</trackLenght>
+                </song>
+                <song>
+                    <number>4</number>
+                    <trackTitle>Sheep</trackTitle>
+                    <trackLenght>10:19</trackLenght>
+                </song>
+                <song>
+                    <number>5</number>
+                    <trackTitle>Pigs on the wing</trackTitle>
+                    <trackLenght>1:27</trackLenght>
+                </song>
+            </tracks>
+        </album>
+    </albums>
+</albumCollection>
+

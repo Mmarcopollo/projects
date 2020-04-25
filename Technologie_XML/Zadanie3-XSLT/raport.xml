@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Generated>
+    <albumCollection/>
+    <Report>
+        <Stats>
+            <NumberOfTypesOfAlbums>18</NumberOfTypesOfAlbums>
+            <sumOdPrice>631.82zł</sumOdPrice>
+            <avaragePrice>35.1zł</avaragePrice>
+            <highestPrice>50.99zł</highestPrice>
+            <lowestPrice>18.99zł</lowestPrice>
+        </Stats>
+        <Hip-Hop>
+            <OrderId>Czerwony Dywan</OrderId>
+            <OrderId>Wojtek Sokół</OrderId>
+        </Hip-Hop>
+        <POP>
+            <OrderId>Heart to Mouth</OrderId>
+            <OrderId>Malomiasteczkowy</OrderId>
+        </POP>
+        <Rock>
+            <OrderId>Nevermind</OrderId>
+            <OrderId>Appetite For Destruction</OrderId>
+            <OrderId>Lightbulb Sun</OrderId>
+            <OrderId>Shrine of New Generation Slaves</OrderId>
+            <OrderId>Animals</OrderId>
+        </Rock>
+        <Clasical>
+            <OrderId>Amelie from Montmartre (Original SoundTrack</OrderId>
+            <OrderId>Interstellar (Original Motion Picture Sountrack)</OrderId>
+        </Clasical>
+        <Metal>
+            <OrderId>Metallica</OrderId>
+            <OrderId>Highway to Hell</OrderId>
+        </Metal>
+        <Disco>
+            <OrderId>Czar Miłości</OrderId>
+            <OrderId>The greatest hits</OrderId>
+            <OrderId>Ona Tańczy Dla Mnie</OrderId>
+            <OrderId>Przebojowa</OrderId>
+            <OrderId>Złote przeboje</OrderId>
+        </Disco>
+        <Author>
+            <Name>Marek Szafran</Name>
+            <ID>210329</ID>
+        </Author>
+        <ReportDate>
+            <Date>2019-12-03T21:22:34Z</Date>
+        </ReportDate>
+    </Report>
+</Generated>
